@@ -6,7 +6,7 @@ docker run --restart unless-stopped -d -p 9090:9090 -v /home/ec2-user/prometheus
 # How to run the nodeexporter docker image
 docker run --restart unless-stopped -d -p 9100:9100 quay.io/prometheus/node-exporter:v1.2.2
 
-# use this ansiblw command to run the above command
+# use this ansible command to run the above command
 ansible all -i hosts -m shell -a "your command" --key-file /home/ec2-user/.ssh/id_rsa --become
 
 # How to run the Grafana docker image
